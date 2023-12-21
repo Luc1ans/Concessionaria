@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CarDBModelStoreContainer" CdmEntityContainer="CarDBEntities">
+    <EntitySetMapping Name="Blindagems">
+      <EntityTypeMapping TypeName="CarDBModel.Blindagem">
+        <MappingFragment StoreEntitySet="Blindagems">
+          <ScalarProperty Name="IdBlindagem" ColumnName="IdBlindagem" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cambios">
+      <EntityTypeMapping TypeName="CarDBModel.Cambio">
+        <MappingFragment StoreEntitySet="Cambios">
+          <ScalarProperty Name="IdCambio" ColumnName="IdCambio" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categorias">
+      <EntityTypeMapping TypeName="CarDBModel.Categoria">
+        <MappingFragment StoreEntitySet="Categorias">
+          <ScalarProperty Name="IdCategoria" ColumnName="IdCategoria" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Combustivels">
+      <EntityTypeMapping TypeName="CarDBModel.Combustivel">
+        <MappingFragment StoreEntitySet="Combustivels">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="IdCombustivel" ColumnName="IdCombustivel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cors">
+      <EntityTypeMapping TypeName="CarDBModel.Cor">
+        <MappingFragment StoreEntitySet="Cors">
+          <ScalarProperty Name="IdCor" ColumnName="IdCor" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Marcas">
+      <EntityTypeMapping TypeName="CarDBModel.Marca">
+        <MappingFragment StoreEntitySet="Marcas">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="IdMarca" ColumnName="IdMarca" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Modeloes">
+      <EntityTypeMapping TypeName="CarDBModel.Modelo">
+        <MappingFragment StoreEntitySet="Modeloes">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="MarcaID" ColumnName="MarcaID" />
+          <ScalarProperty Name="IdModelo" ColumnName="IdModelo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Opcionaisveiculos">
+      <EntityTypeMapping TypeName="CarDBModel.Opcionaisveiculo">
+        <MappingFragment StoreEntitySet="Opcionaisveiculos">
+          <ScalarProperty Name="IDopVe" ColumnName="IDopVe" />
+          <ScalarProperty Name="IDVeiculo" ColumnName="IDVeiculo" />
+          <ScalarProperty Name="IDOpcional" ColumnName="IDOpcional" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Opcionals">
+      <EntityTypeMapping TypeName="CarDBModel.Opcional">
+        <MappingFragment StoreEntitySet="Opcionals">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="IdOpcional" ColumnName="IdOpcional" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="CarDBModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="Senha" ColumnName="Senha" />
+          <ScalarProperty Name="DataCadastro" ColumnName="DataCadastro" />
+          <ScalarProperty Name="DataUltimoAcesso" ColumnName="DataUltimoAcesso" />
+          <ScalarProperty Name="Ativo" ColumnName="Ativo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Veiculoes">
+      <EntityTypeMapping TypeName="CarDBModel.Veiculo">
+        <MappingFragment StoreEntitySet="Veiculoes">
+          <ScalarProperty Name="AnoFabricacao" ColumnName="AnoFabricacao" />
+          <ScalarProperty Name="AnoModelo" ColumnName="AnoModelo" />
+          <ScalarProperty Name="BlindagemID" ColumnName="BlindagemID" />
+          <ScalarProperty Name="CambioID" ColumnName="CambioID" />
+          <ScalarProperty Name="CombustivelID" ColumnName="CombustivelID" />
+          <ScalarProperty Name="CorID" ColumnName="CorID" />
+          <ScalarProperty Name="IdVeiculo" ColumnName="IdVeiculo" />
+          <ScalarProperty Name="VersaoID" ColumnName="VersaoID" />
+          <ScalarProperty Name="Placa" ColumnName="Placa" />
+          <ScalarProperty Name="Portas" ColumnName="Portas" />
+          <ScalarProperty Name="Quilometragem" ColumnName="Quilometragem" />
+          <ScalarProperty Name="PrecoNormal" ColumnName="PrecoNormal" />
+          <ScalarProperty Name="Acessos" ColumnName="Acessos" />
+          <ScalarProperty Name="Destaque" ColumnName="Destaque" />
+          <ScalarProperty Name="DataCadastro" ColumnName="DataCadastro" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="AceitaPermuta" ColumnName="AceitaPermuta" />
+          <ScalarProperty Name="VeiculoComDivida" ColumnName="VeiculoComDivida" />
+          <ScalarProperty Name="CondicaoPagamento" ColumnName="CondicaoPagamento" />
+          <ScalarProperty Name="Ranking" ColumnName="Ranking" />
+          <ScalarProperty Name="PrecoPromocional" ColumnName="PrecoPromocional" />
+          <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
+          <ScalarProperty Name="QtdeEstoque" ColumnName="QtdeEstoque" />
+          <ScalarProperty Name="CategoriaID" ColumnName="CategoriaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Versaos">
+      <EntityTypeMapping TypeName="CarDBModel.Versao">
+        <MappingFragment StoreEntitySet="Versaos">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="ModeloID" ColumnName="ModeloID" />
+          <ScalarProperty Name="IdVersao" ColumnName="IdVersao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

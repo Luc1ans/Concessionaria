@@ -1,0 +1,2 @@
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\obj\Release\Concessionaria.csproj.AssemblyReference.cache
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\obj\Release\Concessionaria.csproj.CoreCompileInputs.cache

@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CarDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Blindagems">
+    <Key>
+      <PropertyRef Name="IdBlindagem" />
+    </Key>
+    <Property Name="IdBlindagem" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descricao" Type="varchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cambios">
+    <Key>
+      <PropertyRef Name="IdCambio" />
+    </Key>
+    <Property Name="IdCambio" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descricao" Type="varchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Categorias">
+    <Key>
+      <PropertyRef Name="IdCategoria" />
+    </Key>
+    <Property Name="IdCategoria" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descricao" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Combustivels">
+    <Key>
+      <PropertyRef Name="IdCombustivel" />
+    </Key>
+    <Property Name="Descricao" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="IdCombustivel" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cors">
+    <Key>
+      <PropertyRef Name="IdCor" />
+    </Key>
+    <Property Name="IdCor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nome" Type="varchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Marcas">
+    <Key>
+      <PropertyRef Name="IdMarca" />
+    </Key>
+    <Property Name="Descricao" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="IdMarca" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Modeloes">
+    <Key>
+      <PropertyRef Name="IdModelo" />
+    </Key>
+    <Property Name="Descricao" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="MarcaID" Type="int" />
+    <Property Name="IdModelo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Opcionaisveiculos">
+    <Key>
+      <PropertyRef Name="IDopVe" />
+    </Key>
+    <Property Name="IDopVe" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDVeiculo" Type="int" Nullable="false" />
+    <Property Name="IDOpcional" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Opcionals">
+    <Key>
+      <PropertyRef Name="IdOpcional" />
+    </Key>
+    <Property Name="Descricao" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="IdOpcional" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="Email" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="IdUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Senha" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="DataCadastro" Type="datetime" Nullable="false" />
+    <Property Name="DataUltimoAcesso" Type="datetime" Nullable="false" />
+    <Property Name="Ativo" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Veiculoes">
+    <Key>
+      <PropertyRef Name="IdVeiculo" />
+    </Key>
+    <Property Name="AnoFabricacao" Type="int" />
+    <Property Name="AnoModelo" Type="int" />
+    <Property Name="BlindagemID" Type="int" Nullable="false" />
+    <Property Name="CambioID" Type="int" Nullable="false" />
+    <Property Name="CombustivelID" Type="int" Nullable="false" />
+    <Property Name="CorID" Type="int" Nullable="false" />
+    <Property Name="IdVeiculo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VersaoID" Type="int" Nullable="false" />
+    <Property Name="Placa" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Portas" Type="int" />
+    <Property Name="Quilometragem" Type="int" />
+    <Property Name="PrecoNormal" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Acessos" Type="int" Nullable="false" />
+    <Property Name="Destaque" Type="tinyint" Nullable="false" />
+    <Property Name="DataCadastro" Type="datetime" Nullable="false" />
+    <Property Name="Descricao" Type="varchar" MaxLength="8000" />
+    <Property Name="AceitaPermuta" Type="tinyint" Nullable="false" />
+    <Property Name="VeiculoComDivida" Type="tinyint" Nullable="false" />
+    <Property Name="CondicaoPagamento" Type="varchar" MaxLength="250" />
+    <Property Name="Ranking" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PrecoPromocional" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="UsuarioID" Type="int" Nullable="false" />
+    <Property Name="QtdeEstoque" Type="int" Nullable="false" />
+    <Property Name="CategoriaID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Versaos">
+    <Key>
+      <PropertyRef Name="IdVersao" />
+    </Key>
+    <Property Name="Descricao" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ModeloID" Type="int" Nullable="false" />
+    <Property Name="IdVersao" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_IDOpcional">
+    <End Role="Opcionals" Type="Self.Opcionals" Multiplicity="1" />
+    <End Role="Opcionaisveiculos" Type="Self.Opcionaisveiculos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Opcionals">
+        <PropertyRef Name="IdOpcional" />
+      </Principal>
+      <Dependent Role="Opcionaisveiculos">
+        <PropertyRef Name="IDOpcional" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IDVeiculo">
+    <End Role="Veiculoes" Type="Self.Veiculoes" Multiplicity="1" />
+    <End Role="Opcionaisveiculos" Type="Self.Opcionaisveiculos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Veiculoes">
+        <PropertyRef Name="IdVeiculo" />
+      </Principal>
+      <Dependent Role="Opcionaisveiculos">
+        <PropertyRef Name="IDVeiculo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Modelo_Marca">
+    <End Role="Marcas" Type="Self.Marcas" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Modeloes" Type="Self.Modeloes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Marcas">
+        <PropertyRef Name="IdMarca" />
+      </Principal>
+      <Dependent Role="Modeloes">
+        <PropertyRef Name="MarcaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Veiculo_Blindagem">
+    <End Role="Blindagems" Type="Self.Blindagems" Multiplicity="1" />
+    <End Role="Veiculoes" Type="Self.Veiculoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Blindagems">
+        <PropertyRef Name="IdBlindagem" />
+      </Principal>
+      <Dependent Role="Veiculoes">
+        <PropertyRef Name="BlindagemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Veiculo_Cambio">
+    <End Role="Cambios" Type="Self.Cambios" Multiplicity="1" />
+    <End Role="Veiculoes" Type="Self.Veiculoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cambios">
+        <PropertyRef Name="IdCambio" />
+      </Principal>
+      <Dependent Role="Veiculoes">
+        <PropertyRef Name="CambioID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Veiculo_categoria">
+    <End Role="Categorias" Type="Self.Categorias" Multiplicity="1" />
+    <End Role="Veiculoes" Type="Self.Veiculoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categorias">
+        <PropertyRef Name="IdCategoria" />
+      </Principal>
+      <Dependent Role="Veiculoes">
+        <PropertyRef Name="CategoriaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Veiculo_combustivel">
+    <End Role="Combustivels" Type="Self.Combustivels" Multiplicity="1" />
+    <End Role="Veiculoes" Type="Self.Veiculoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Combustivels">
+        <PropertyRef Name="IdCombustivel" />
+      </Principal>
+      <Dependent Role="Veiculoes">
+        <PropertyRef Name="CombustivelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Veiculo_cor">
+    <End Role="Cors" Type="Self.Cors" Multiplicity="1" />
+    <End Role="Veiculoes" Type="Self.Veiculoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cors">
+        <PropertyRef Name="IdCor" />
+      </Principal>
+      <Dependent Role="Veiculoes">
+        <PropertyRef Name="CorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Veiculo_Usuario">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="1" />
+    <End Role="Veiculoes" Type="Self.Veiculoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="Veiculoes">
+        <PropertyRef Name="UsuarioID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Veiculo_versao">
+    <End Role="Versaos" Type="Self.Versaos" Multiplicity="1" />
+    <End Role="Veiculoes" Type="Self.Veiculoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Versaos">
+        <PropertyRef Name="IdVersao" />
+      </Principal>
+      <Dependent Role="Veiculoes">
+        <PropertyRef Name="VersaoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Versao_Modelo">
+    <End Role="Modeloes" Type="Self.Modeloes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Versaos" Type="Self.Versaos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Modeloes">
+        <PropertyRef Name="IdModelo" />
+      </Principal>
+      <Dependent Role="Versaos">
+        <PropertyRef Name="ModeloID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CarDBModelStoreContainer">
+    <EntitySet Name="Blindagems" EntityType="Self.Blindagems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cambios" EntityType="Self.Cambios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Categorias" EntityType="Self.Categorias" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Combustivels" EntityType="Self.Combustivels" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cors" EntityType="Self.Cors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Marcas" EntityType="Self.Marcas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Modeloes" EntityType="Self.Modeloes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Opcionaisveiculos" EntityType="Self.Opcionaisveiculos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Opcionals" EntityType="Self.Opcionals" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Veiculoes" EntityType="Self.Veiculoes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Versaos" EntityType="Self.Versaos" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_IDOpcional" Association="Self.FK_IDOpcional">
+      <End Role="Opcionals" EntitySet="Opcionals" />
+      <End Role="Opcionaisveiculos" EntitySet="Opcionaisveiculos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IDVeiculo" Association="Self.FK_IDVeiculo">
+      <End Role="Veiculoes" EntitySet="Veiculoes" />
+      <End Role="Opcionaisveiculos" EntitySet="Opcionaisveiculos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Modelo_Marca" Association="Self.FK_Modelo_Marca">
+      <End Role="Marcas" EntitySet="Marcas" />
+      <End Role="Modeloes" EntitySet="Modeloes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Veiculo_Blindagem" Association="Self.FK_Veiculo_Blindagem">
+      <End Role="Blindagems" EntitySet="Blindagems" />
+      <End Role="Veiculoes" EntitySet="Veiculoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Veiculo_Cambio" Association="Self.FK_Veiculo_Cambio">
+      <End Role="Cambios" EntitySet="Cambios" />
+      <End Role="Veiculoes" EntitySet="Veiculoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Veiculo_categoria" Association="Self.FK_Veiculo_categoria">
+      <End Role="Categorias" EntitySet="Categorias" />
+      <End Role="Veiculoes" EntitySet="Veiculoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Veiculo_combustivel" Association="Self.FK_Veiculo_combustivel">
+      <End Role="Combustivels" EntitySet="Combustivels" />
+      <End Role="Veiculoes" EntitySet="Veiculoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Veiculo_cor" Association="Self.FK_Veiculo_cor">
+      <End Role="Cors" EntitySet="Cors" />
+      <End Role="Veiculoes" EntitySet="Veiculoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Veiculo_Usuario" Association="Self.FK_Veiculo_Usuario">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Veiculoes" EntitySet="Veiculoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Veiculo_versao" Association="Self.FK_Veiculo_versao">
+      <End Role="Versaos" EntitySet="Versaos" />
+      <End Role="Veiculoes" EntitySet="Veiculoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Versao_Modelo" Association="Self.FK_Versao_Modelo">
+      <End Role="Modeloes" EntitySet="Modeloes" />
+      <End Role="Versaos" EntitySet="Versaos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

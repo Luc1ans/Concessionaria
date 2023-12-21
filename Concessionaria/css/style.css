@@ -1,0 +1,27 @@
+﻿/*Itens header*/
+header {
+    grid-area: h;
+    margin-bottom: 1vw;
+}
+
+#nav1 {
+    width: 100vw;
+    padding: 20px;
+}
+
+.titulo {
+    background-color: #19467E;
+    text-align: center;
+    color: white;
+    height: 22px;
+    width: 100vw;
+}
+
+/*Navbar*/
+#navbar {
+    grid-area: n;
+    background-color: white;
+    margin-left: 15vw;
+    text-align: center;
+    border-radius: 5px;
+}

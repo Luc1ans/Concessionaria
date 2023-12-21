@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CarDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="CarDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Blindagems" EntityType="CarDBModel.Blindagem" />
+    <EntitySet Name="Cambios" EntityType="CarDBModel.Cambio" />
+    <EntitySet Name="Categorias" EntityType="CarDBModel.Categoria" />
+    <EntitySet Name="Combustivels" EntityType="CarDBModel.Combustivel" />
+    <EntitySet Name="Cors" EntityType="CarDBModel.Cor" />
+    <EntitySet Name="Marcas" EntityType="CarDBModel.Marca" />
+    <EntitySet Name="Modeloes" EntityType="CarDBModel.Modelo" />
+    <EntitySet Name="Opcionals" EntityType="CarDBModel.Opcional" />
+    <EntitySet Name="Usuarios" EntityType="CarDBModel.Usuario" />
+    <EntitySet Name="Veiculoes" EntityType="CarDBModel.Veiculo" />
+    <EntitySet Name="Versaos" EntityType="CarDBModel.Versao" />
+    <AssociationSet Name="FK_Veiculo_Blindagem" Association="CarDBModel.FK_Veiculo_Blindagem">
+      <End Role="Blindagem" EntitySet="Blindagems" />
+      <End Role="Veiculo" EntitySet="Veiculoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Veiculo_Cambio" Association="CarDBModel.FK_Veiculo_Cambio">
+      <End Role="Cambio" EntitySet="Cambios" />
+      <End Role="Veiculo" EntitySet="Veiculoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Veiculo_categoria" Association="CarDBModel.FK_Veiculo_categoria">
+      <End Role="Categoria" EntitySet="Categorias" />
+      <End Role="Veiculo" EntitySet="Veiculoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Veiculo_combustivel" Association="CarDBModel.FK_Veiculo_combustivel">
+      <End Role="Combustivel" EntitySet="Combustivels" />
+      <End Role="Veiculo" EntitySet="Veiculoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Veiculo_cor" Association="CarDBModel.FK_Veiculo_cor">
+      <End Role="Cor" EntitySet="Cors" />
+      <End Role="Veiculo" EntitySet="Veiculoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Modelo_Marca" Association="CarDBModel.FK_Modelo_Marca">
+      <End Role="Marca" EntitySet="Marcas" />
+      <End Role="Modelo" EntitySet="Modeloes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Versao_Modelo" Association="CarDBModel.FK_Versao_Modelo">
+      <End Role="Modelo" EntitySet="Modeloes" />
+      <End Role="Versao" EntitySet="Versaos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Veiculo_Usuario" Association="CarDBModel.FK_Veiculo_Usuario">
+      <End Role="Usuario" EntitySet="Usuarios" />
+      <End Role="Veiculo" EntitySet="Veiculoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Veiculo_versao" Association="CarDBModel.FK_Veiculo_versao">
+      <End Role="Versao" EntitySet="Versaos" />
+      <End Role="Veiculo" EntitySet="Veiculoes" />
+    </AssociationSet>
+    <AssociationSet Name="Opcionaisveiculo" Association="CarDBModel.Opcionaisveiculo">
+      <End Role="Opcional" EntitySet="Opcionals" />
+      <End Role="Veiculo" EntitySet="Veiculoes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Blindagem">
+    <Key>
+      <PropertyRef Name="IdBlindagem" />
+    </Key>
+    <Property Name="IdBlindagem" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descricao" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Veiculoes" Relationship="CarDBModel.FK_Veiculo_Blindagem" FromRole="Blindagem" ToRole="Veiculo" />
+  </EntityType>
+  <EntityType Name="Cambio">
+    <Key>
+      <PropertyRef Name="IdCambio" />
+    </Key>
+    <Property Name="IdCambio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descricao" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Veiculoes" Relationship="CarDBModel.FK_Veiculo_Cambio" FromRole="Cambio" ToRole="Veiculo" />
+  </EntityType>
+  <EntityType Name="Categoria">
+    <Key>
+      <PropertyRef Name="IdCategoria" />
+    </Key>
+    <Property Name="IdCategoria" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descricao" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Veiculoes" Relationship="CarDBModel.FK_Veiculo_categoria" FromRole="Categoria" ToRole="Veiculo" />
+  </EntityType>
+  <EntityType Name="Combustivel">
+    <Key>
+      <PropertyRef Name="IdCombustivel" />
+    </Key>
+    <Property Name="Descricao" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="IdCombustivel" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Veiculoes" Relationship="CarDBModel.FK_Veiculo_combustivel" FromRole="Combustivel" ToRole="Veiculo" />
+  </EntityType>
+  <EntityType Name="Cor">
+    <Key>
+      <PropertyRef Name="IdCor" />
+    </Key>
+    <Property Name="IdCor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Veiculoes" Relationship="CarDBModel.FK_Veiculo_cor" FromRole="Cor" ToRole="Veiculo" />
+  </EntityType>
+  <EntityType Name="Marca">
+    <Key>
+      <PropertyRef Name="IdMarca" />
+    </Key>
+    <Property Name="Descricao" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="IdMarca" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Modeloes" Relationship="CarDBModel.FK_Modelo_Marca" FromRole="Marca" ToRole="Modelo" />
+  </EntityType>
+  <EntityType Name="Modelo">
+    <Key>
+      <PropertyRef Name="IdModelo" />
+    </Key>
+    <Property Name="Descricao" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MarcaID" Type="Int32" />
+    <Property Name="IdModelo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Marca" Relationship="CarDBModel.FK_Modelo_Marca" FromRole="Modelo" ToRole="Marca" />
+    <NavigationProperty Name="Versaos" Relationship="CarDBModel.FK_Versao_Modelo" FromRole="Modelo" ToRole="Versao" />
+  </EntityType>
+  <EntityType Name="Opcional">
+    <Key>
+      <PropertyRef Name="IdOpcional" />
+    </Key>
+    <Property Name="Descricao" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="IdOpcional" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Veiculoes" Relationship="CarDBModel.Opcionaisveiculo" FromRole="Opcional" ToRole="Veiculo" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Senha" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="DataCadastro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DataUltimoAcesso" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Ativo" Type="Byte" Nullable="false" />
+    <NavigationProperty Name="Veiculoes" Relationship="CarDBModel.FK_Veiculo_Usuario" FromRole="Usuario" ToRole="Veiculo" />
+  </EntityType>
+  <EntityType Name="Veiculo">
+    <Key>
+      <PropertyRef Name="IdVeiculo" />
+    </Key>
+    <Property Name="AnoFabricacao" Type="Int32" />
+    <Property Name="AnoModelo" Type="Int32" />
+    <Property Name="BlindagemID" Type="Int32" Nullable="false" />
+    <Property Name="CambioID" Type="Int32" Nullable="false" />
+    <Property Name="CombustivelID" Type="Int32" Nullable="false" />
+    <Property Name="CorID" Type="Int32" Nullable="false" />
+    <Property Name="IdVeiculo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VersaoID" Type="Int32" Nullable="false" />
+    <Property Name="Placa" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Portas" Type="Int32" />
+    <Property Name="Quilometragem" Type="Int32" />
+    <Property Name="PrecoNormal" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Acessos" Type="Int32" Nullable="false" />
+    <Property Name="Destaque" Type="Byte" Nullable="false" />
+    <Property Name="DataCadastro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Descricao" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+    <Property Name="AceitaPermuta" Type="Byte" Nullable="false" />
+    <Property Name="VeiculoComDivida" Type="Byte" Nullable="false" />
+    <Property Name="CondicaoPagamento" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Ranking" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PrecoPromocional" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="UsuarioID" Type="Int32" Nullable="false" />
+    <Property Name="QtdeEstoque" Type="Int32" Nullable="false" />
+    <Property Name="CategoriaID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Blindagem" Relationship="CarDBModel.FK_Veiculo_Blindagem" FromRole="Veiculo" ToRole="Blindagem" />
+    <NavigationProperty Name="Cambio" Relationship="CarDBModel.FK_Veiculo_Cambio" FromRole="Veiculo" ToRole="Cambio" />
+    <NavigationProperty Name="Categoria" Relationship="CarDBModel.FK_Veiculo_categoria" FromRole="Veiculo" ToRole="Categoria" />
+    <NavigationProperty Name="Combustivel" Relationship="CarDBModel.FK_Veiculo_combustivel" FromRole="Veiculo" ToRole="Combustivel" />
+    <NavigationProperty Name="Cor" Relationship="CarDBModel.FK_Veiculo_cor" FromRole="Veiculo" ToRole="Cor" />
+    <NavigationProperty Name="Usuario" Relationship="CarDBModel.FK_Veiculo_Usuario" FromRole="Veiculo" ToRole="Usuario" />
+    <NavigationProperty Name="Versao" Relationship="CarDBModel.FK_Veiculo_versao" FromRole="Veiculo" ToRole="Versao" />
+    <NavigationProperty Name="Opcionals" Relationship="CarDBModel.Opcionaisveiculo" FromRole="Veiculo" ToRole="Opcional" />
+  </EntityType>
+  <EntityType Name="Versao">
+    <Key>
+      <PropertyRef Name="IdVersao" />
+    </Key>
+    <Property Name="Descricao" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ModeloID" Type="Int32" Nullable="false" />
+    <Property Name="IdVersao" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Modelo" Relationship="CarDBModel.FK_Versao_Modelo" FromRole="Versao" ToRole="Modelo" />
+    <NavigationProperty Name="Veiculoes" Relationship="CarDBModel.FK_Veiculo_versao" FromRole="Versao" ToRole="Veiculo" />
+  </EntityType>
+  <Association Name="FK_Veiculo_Blindagem">
+    <End Type="CarDBModel.Blindagem" Role="Blindagem" Multiplicity="1" />
+    <End Type="CarDBModel.Veiculo" Role="Veiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Blindagem">
+        <PropertyRef Name="IdBlindagem" />
+      </Principal>
+      <Dependent Role="Veiculo">
+        <PropertyRef Name="BlindagemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Veiculo_Cambio">
+    <End Type="CarDBModel.Cambio" Role="Cambio" Multiplicity="1" />
+    <End Type="CarDBModel.Veiculo" Role="Veiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cambio">
+        <PropertyRef Name="IdCambio" />
+      </Principal>
+      <Dependent Role="Veiculo">
+        <PropertyRef Name="CambioID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Veiculo_categoria">
+    <End Type="CarDBModel.Categoria" Role="Categoria" Multiplicity="1" />
+    <End Type="CarDBModel.Veiculo" Role="Veiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categoria">
+        <PropertyRef Name="IdCategoria" />
+      </Principal>
+      <Dependent Role="Veiculo">
+        <PropertyRef Name="CategoriaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Veiculo_combustivel">
+    <End Type="CarDBModel.Combustivel" Role="Combustivel" Multiplicity="1" />
+    <End Type="CarDBModel.Veiculo" Role="Veiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Combustivel">
+        <PropertyRef Name="IdCombustivel" />
+      </Principal>
+      <Dependent Role="Veiculo">
+        <PropertyRef Name="CombustivelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Veiculo_cor">
+    <End Type="CarDBModel.Cor" Role="Cor" Multiplicity="1" />
+    <End Type="CarDBModel.Veiculo" Role="Veiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cor">
+        <PropertyRef Name="IdCor" />
+      </Principal>
+      <Dependent Role="Veiculo">
+        <PropertyRef Name="CorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Modelo_Marca">
+    <End Type="CarDBModel.Marca" Role="Marca" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CarDBModel.Modelo" Role="Modelo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Marca">
+        <PropertyRef Name="IdMarca" />
+      </Principal>
+      <Dependent Role="Modelo">
+        <PropertyRef Name="MarcaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Versao_Modelo">
+    <End Type="CarDBModel.Modelo" Role="Modelo" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CarDBModel.Versao" Role="Versao" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Modelo">
+        <PropertyRef Name="IdModelo" />
+      </Principal>
+      <Dependent Role="Versao">
+        <PropertyRef Name="ModeloID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Veiculo_Usuario">
+    <End Type="CarDBModel.Usuario" Role="Usuario" Multiplicity="1" />
+    <End Type="CarDBModel.Veiculo" Role="Veiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="Veiculo">
+        <PropertyRef Name="UsuarioID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Veiculo_versao">
+    <End Type="CarDBModel.Versao" Role="Versao" Multiplicity="1" />
+    <End Type="CarDBModel.Veiculo" Role="Veiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Versao">
+        <PropertyRef Name="IdVersao" />
+      </Principal>
+      <Dependent Role="Veiculo">
+        <PropertyRef Name="VersaoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Opcionaisveiculo">
+    <End Type="CarDBModel.Opcional" Role="Opcional" Multiplicity="*" />
+    <End Type="CarDBModel.Veiculo" Role="Veiculo" Multiplicity="*" />
+  </Association>
+</Schema>

@@ -1,0 +1,633 @@
+
+
+-- --------------------------------------------------
+-- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
+-- --------------------------------------------------
+-- Date Created: 11/27/2023 14:50:04
+-- Generated from EDMX file: C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\CarDBEntities.edmx
+-- --------------------------------------------------
+
+SET QUOTED_IDENTIFIER OFF;
+GO
+USE [CarDB];
+GO
+IF SCHEMA_ID(N'dbo') IS NULL EXECUTE(N'CREATE SCHEMA [dbo]');
+GO
+
+-- --------------------------------------------------
+-- Dropping existing FOREIGN KEY constraints
+-- --------------------------------------------------
+
+IF OBJECT_ID(N'[dbo].[FK_IDOpcional]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Opcionaisveiculos] DROP CONSTRAINT [FK_IDOpcional];
+GO
+IF OBJECT_ID(N'[dbo].[FK_IDVeiculo]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Opcionaisveiculos] DROP CONSTRAINT [FK_IDVeiculo];
+GO
+IF OBJECT_ID(N'[dbo].[FK_Modelo_Marca]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Modeloes] DROP CONSTRAINT [FK_Modelo_Marca];
+GO
+IF OBJECT_ID(N'[dbo].[FK_Veiculo_Blindagem]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Veiculoes] DROP CONSTRAINT [FK_Veiculo_Blindagem];
+GO
+IF OBJECT_ID(N'[dbo].[FK_Veiculo_Cambio]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Veiculoes] DROP CONSTRAINT [FK_Veiculo_Cambio];
+GO
+IF OBJECT_ID(N'[dbo].[FK_Veiculo_categoria]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Veiculoes] DROP CONSTRAINT [FK_Veiculo_categoria];
+GO
+IF OBJECT_ID(N'[dbo].[FK_Veiculo_combustivel]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Veiculoes] DROP CONSTRAINT [FK_Veiculo_combustivel];
+GO
+IF OBJECT_ID(N'[dbo].[FK_Veiculo_cor]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Veiculoes] DROP CONSTRAINT [FK_Veiculo_cor];
+GO
+IF OBJECT_ID(N'[dbo].[FK_Veiculo_Usuario]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Veiculoes] DROP CONSTRAINT [FK_Veiculo_Usuario];
+GO
+IF OBJECT_ID(N'[dbo].[FK_Veiculo_versao]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Veiculoes] DROP CONSTRAINT [FK_Veiculo_versao];
+GO
+IF OBJECT_ID(N'[dbo].[FK_Versao_Modelo]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Versaos] DROP CONSTRAINT [FK_Versao_Modelo];
+GO
+
+-- --------------------------------------------------
+-- Dropping existing tables
+-- --------------------------------------------------
+
+IF OBJECT_ID(N'[dbo].[Blindagems]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Blindagems];
+GO
+IF OBJECT_ID(N'[dbo].[Cambios]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Cambios];
+GO
+IF OBJECT_ID(N'[dbo].[Categorias]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Categorias];
+GO
+IF OBJECT_ID(N'[dbo].[Combustivels]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Combustivels];
+GO
+IF OBJECT_ID(N'[dbo].[Cors]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Cors];
+GO
+IF OBJECT_ID(N'[dbo].[Marcas]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Marcas];
+GO
+IF OBJECT_ID(N'[dbo].[Modeloes]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Modeloes];
+GO
+IF OBJECT_ID(N'[dbo].[Opcionaisveiculos]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Opcionaisveiculos];
+GO
+IF OBJECT_ID(N'[dbo].[Opcionals]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Opcionals];
+GO
+IF OBJECT_ID(N'[dbo].[Usuarios]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Usuarios];
+GO
+IF OBJECT_ID(N'[dbo].[Veiculoes]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Veiculoes];
+GO
+IF OBJECT_ID(N'[dbo].[Versaos]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Versaos];
+GO
+
+-- --------------------------------------------------
+-- Creating all tables
+-- --------------------------------------------------
+
+-- Creating table 'Blindagems'
+CREATE TABLE [dbo].[Blindagems] (
+    [IdBlindagem] int IDENTITY(1,1) NOT NULL,
+    [Descricao] varchar(200)  NOT NULL
+);
+GO
+
+-- Creating table 'Cambios'
+CREATE TABLE [dbo].[Cambios] (
+    [IdCambio] int IDENTITY(1,1) NOT NULL,
+    [Descricao] varchar(200)  NOT NULL
+);
+GO
+
+-- Creating table 'Categorias'
+CREATE TABLE [dbo].[Categorias] (
+    [IdCategoria] int IDENTITY(1,1) NOT NULL,
+    [Descricao] varchar(100)  NOT NULL
+);
+GO
+
+-- Creating table 'Combustivels'
+CREATE TABLE [dbo].[Combustivels] (
+    [Descricao] varchar(200)  NOT NULL,
+    [IdCombustivel] int IDENTITY(1,1) NOT NULL
+);
+GO
+
+-- Creating table 'Cors'
+CREATE TABLE [dbo].[Cors] (
+    [IdCor] int IDENTITY(1,1) NOT NULL,
+    [Nome] varchar(200)  NOT NULL
+);
+GO
+
+-- Creating table 'Marcas'
+CREATE TABLE [dbo].[Marcas] (
+    [Descricao] varchar(200)  NOT NULL,
+    [IdMarca] int IDENTITY(1,1) NOT NULL
+);
+GO
+
+-- Creating table 'Modeloes'
+CREATE TABLE [dbo].[Modeloes] (
+    [Descricao] varchar(100)  NOT NULL,
+    [MarcaID] int  NULL,
+    [IdModelo] int IDENTITY(1,1) NOT NULL
+);
+GO
+
+-- Creating table 'Opcionaisveiculos'
+CREATE TABLE [dbo].[Opcionaisveiculos] (
+    [IDopVe] int IDENTITY(1,1) NOT NULL,
+    [IDVeiculo] int  NOT NULL,
+    [IDOpcional] int  NOT NULL
+);
+GO
+
+-- Creating table 'Opcionals'
+CREATE TABLE [dbo].[Opcionals] (
+    [Descricao] varchar(200)  NOT NULL,
+    [IdOpcional] int IDENTITY(1,1) NOT NULL
+);
+GO
+
+-- Creating table 'Usuarios'
+CREATE TABLE [dbo].[Usuarios] (
+    [Email] varchar(100)  NOT NULL,
+    [IdUsuario] int IDENTITY(1,1) NOT NULL,
+    [Senha] varchar(250)  NOT NULL,
+    [DataCadastro] datetime  NOT NULL,
+    [DataUltimoAcesso] datetime  NOT NULL,
+    [Ativo] tinyint  NOT NULL
+);
+GO
+
+-- Creating table 'Veiculoes'
+CREATE TABLE [dbo].[Veiculoes] (
+    [AnoFabricacao] int  NULL,
+    [AnoModelo] int  NULL,
+    [BlindagemID] int  NOT NULL,
+    [CambioID] int  NOT NULL,
+    [CombustivelID] int  NOT NULL,
+    [CorID] int  NOT NULL,
+    [IdVeiculo] int IDENTITY(1,1) NOT NULL,
+    [VersaoID] int  NOT NULL,
+    [Placa] varchar(10)  NOT NULL,
+    [Portas] int  NULL,
+    [Quilometragem] int  NULL,
+    [PrecoNormal] decimal(18,2)  NOT NULL,
+    [Acessos] int  NOT NULL,
+    [Destaque] tinyint  NOT NULL,
+    [DataCadastro] datetime  NOT NULL,
+    [Descricao] varchar(8000)  NULL,
+    [AceitaPermuta] tinyint  NOT NULL,
+    [VeiculoComDivida] tinyint  NOT NULL,
+    [CondicaoPagamento] varchar(250)  NULL,
+    [Ranking] decimal(18,2)  NULL,
+    [PrecoPromocional] decimal(18,2)  NOT NULL,
+    [UsuarioID] int  NOT NULL,
+    [QtdeEstoque] int  NOT NULL,
+    [CategoriaID] int  NOT NULL
+);
+GO
+
+-- Creating table 'Versaos'
+CREATE TABLE [dbo].[Versaos] (
+    [Descricao] varchar(100)  NOT NULL,
+    [ModeloID] int  NOT NULL,
+    [IdVersao] int IDENTITY(1,1) NOT NULL
+);
+GO
+
+-- --------------------------------------------------
+-- Creating all PRIMARY KEY constraints
+-- --------------------------------------------------
+
+-- Creating primary key on [IdBlindagem] in table 'Blindagems'
+ALTER TABLE [dbo].[Blindagems]
+ADD CONSTRAINT [PK_Blindagems]
+    PRIMARY KEY CLUSTERED ([IdBlindagem] ASC);
+GO
+
+-- Creating primary key on [IdCambio] in table 'Cambios'
+ALTER TABLE [dbo].[Cambios]
+ADD CONSTRAINT [PK_Cambios]
+    PRIMARY KEY CLUSTERED ([IdCambio] ASC);
+GO
+
+-- Creating primary key on [IdCategoria] in table 'Categorias'
+ALTER TABLE [dbo].[Categorias]
+ADD CONSTRAINT [PK_Categorias]
+    PRIMARY KEY CLUSTERED ([IdCategoria] ASC);
+GO
+
+-- Creating primary key on [IdCombustivel] in table 'Combustivels'
+ALTER TABLE [dbo].[Combustivels]
+ADD CONSTRAINT [PK_Combustivels]
+    PRIMARY KEY CLUSTERED ([IdCombustivel] ASC);
+GO
+
+-- Creating primary key on [IdCor] in table 'Cors'
+ALTER TABLE [dbo].[Cors]
+ADD CONSTRAINT [PK_Cors]
+    PRIMARY KEY CLUSTERED ([IdCor] ASC);
+GO
+
+-- Creating primary key on [IdMarca] in table 'Marcas'
+ALTER TABLE [dbo].[Marcas]
+ADD CONSTRAINT [PK_Marcas]
+    PRIMARY KEY CLUSTERED ([IdMarca] ASC);
+GO
+
+-- Creating primary key on [IdModelo] in table 'Modeloes'
+ALTER TABLE [dbo].[Modeloes]
+ADD CONSTRAINT [PK_Modeloes]
+    PRIMARY KEY CLUSTERED ([IdModelo] ASC);
+GO
+
+-- Creating primary key on [IDopVe] in table 'Opcionaisveiculos'
+ALTER TABLE [dbo].[Opcionaisveiculos]
+ADD CONSTRAINT [PK_Opcionaisveiculos]
+    PRIMARY KEY CLUSTERED ([IDopVe] ASC);
+GO
+
+-- Creating primary key on [IdOpcional] in table 'Opcionals'
+ALTER TABLE [dbo].[Opcionals]
+ADD CONSTRAINT [PK_Opcionals]
+    PRIMARY KEY CLUSTERED ([IdOpcional] ASC);
+GO
+
+-- Creating primary key on [IdUsuario] in table 'Usuarios'
+ALTER TABLE [dbo].[Usuarios]
+ADD CONSTRAINT [PK_Usuarios]
+    PRIMARY KEY CLUSTERED ([IdUsuario] ASC);
+GO
+
+-- Creating primary key on [IdVeiculo] in table 'Veiculoes'
+ALTER TABLE [dbo].[Veiculoes]
+ADD CONSTRAINT [PK_Veiculoes]
+    PRIMARY KEY CLUSTERED ([IdVeiculo] ASC);
+GO
+
+-- Creating primary key on [IdVersao] in table 'Versaos'
+ALTER TABLE [dbo].[Versaos]
+ADD CONSTRAINT [PK_Versaos]
+    PRIMARY KEY CLUSTERED ([IdVersao] ASC);
+GO
+
+-- --------------------------------------------------
+-- Creating all FOREIGN KEY constraints
+-- --------------------------------------------------
+
+-- Creating foreign key on [BlindagemID] in table 'Veiculoes'
+ALTER TABLE [dbo].[Veiculoes]
+ADD CONSTRAINT [FK_Veiculo_Blindagem]
+    FOREIGN KEY ([BlindagemID])
+    REFERENCES [dbo].[Blindagems]
+        ([IdBlindagem])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_Veiculo_Blindagem'
+CREATE INDEX [IX_FK_Veiculo_Blindagem]
+ON [dbo].[Veiculoes]
+    ([BlindagemID]);
+GO
+
+-- Creating foreign key on [CambioID] in table 'Veiculoes'
+ALTER TABLE [dbo].[Veiculoes]
+ADD CONSTRAINT [FK_Veiculo_Cambio]
+    FOREIGN KEY ([CambioID])
+    REFERENCES [dbo].[Cambios]
+        ([IdCambio])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_Veiculo_Cambio'
+CREATE INDEX [IX_FK_Veiculo_Cambio]
+ON [dbo].[Veiculoes]
+    ([CambioID]);
+GO
+
+-- Creating foreign key on [CategoriaID] in table 'Veiculoes'
+ALTER TABLE [dbo].[Veiculoes]
+ADD CONSTRAINT [FK_Veiculo_categoria]
+    FOREIGN KEY ([CategoriaID])
+    REFERENCES [dbo].[Categorias]
+        ([IdCategoria])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_Veiculo_categoria'
+CREATE INDEX [IX_FK_Veiculo_categoria]
+ON [dbo].[Veiculoes]
+    ([CategoriaID]);
+GO
+
+-- Creating foreign key on [CombustivelID] in table 'Veiculoes'
+ALTER TABLE [dbo].[Veiculoes]
+ADD CONSTRAINT [FK_Veiculo_combustivel]
+    FOREIGN KEY ([CombustivelID])
+    REFERENCES [dbo].[Combustivels]
+        ([IdCombustivel])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_Veiculo_combustivel'
+CREATE INDEX [IX_FK_Veiculo_combustivel]
+ON [dbo].[Veiculoes]
+    ([CombustivelID]);
+GO
+
+-- Creating foreign key on [CorID] in table 'Veiculoes'
+ALTER TABLE [dbo].[Veiculoes]
+ADD CONSTRAINT [FK_Veiculo_cor]
+    FOREIGN KEY ([CorID])
+    REFERENCES [dbo].[Cors]
+        ([IdCor])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_Veiculo_cor'
+CREATE INDEX [IX_FK_Veiculo_cor]
+ON [dbo].[Veiculoes]
+    ([CorID]);
+GO
+
+-- Creating foreign key on [MarcaID] in table 'Modeloes'
+ALTER TABLE [dbo].[Modeloes]
+ADD CONSTRAINT [FK_Modelo_Marca]
+    FOREIGN KEY ([MarcaID])
+    REFERENCES [dbo].[Marcas]
+        ([IdMarca])
+    ON DELETE CASCADE ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_Modelo_Marca'
+CREATE INDEX [IX_FK_Modelo_Marca]
+ON [dbo].[Modeloes]
+    ([MarcaID]);
+GO
+
+-- Creating foreign key on [ModeloID] in table 'Versaos'
+ALTER TABLE [dbo].[Versaos]
+ADD CONSTRAINT [FK_Versao_Modelo]
+    FOREIGN KEY ([ModeloID])
+    REFERENCES [dbo].[Modeloes]
+        ([IdModelo])
+    ON DELETE CASCADE ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_Versao_Modelo'
+CREATE INDEX [IX_FK_Versao_Modelo]
+ON [dbo].[Versaos]
+    ([ModeloID]);
+GO
+
+-- Creating foreign key on [IDOpcional] in table 'Opcionaisveiculos'
+ALTER TABLE [dbo].[Opcionaisveiculos]
+ADD CONSTRAINT [FK_IDOpcional]
+    FOREIGN KEY ([IDOpcional])
+    REFERENCES [dbo].[Opcionals]
+        ([IdOpcional])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_IDOpcional'
+CREATE INDEX [IX_FK_IDOpcional]
+ON [dbo].[Opcionaisveiculos]
+    ([IDOpcional]);
+GO
+
+-- Creating foreign key on [IDVeiculo] in table 'Opcionaisveiculos'
+ALTER TABLE [dbo].[Opcionaisveiculos]
+ADD CONSTRAINT [FK_IDVeiculo]
+    FOREIGN KEY ([IDVeiculo])
+    REFERENCES [dbo].[Veiculoes]
+        ([IdVeiculo])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_IDVeiculo'
+CREATE INDEX [IX_FK_IDVeiculo]
+ON [dbo].[Opcionaisveiculos]
+    ([IDVeiculo]);
+GO
+
+-- Creating foreign key on [UsuarioID] in table 'Veiculoes'
+ALTER TABLE [dbo].[Veiculoes]
+ADD CONSTRAINT [FK_Veiculo_Usuario]
+    FOREIGN KEY ([UsuarioID])
+    REFERENCES [dbo].[Usuarios]
+        ([IdUsuario])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_Veiculo_Usuario'
+CREATE INDEX [IX_FK_Veiculo_Usuario]
+ON [dbo].[Veiculoes]
+    ([UsuarioID]);
+GO
+
+-- Creating foreign key on [VersaoID] in table 'Veiculoes'
+ALTER TABLE [dbo].[Veiculoes]
+ADD CONSTRAINT [FK_Veiculo_versao]
+    FOREIGN KEY ([VersaoID])
+    REFERENCES [dbo].[Versaos]
+        ([IdVersao])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_Veiculo_versao'
+CREATE INDEX [IX_FK_Veiculo_versao]
+ON [dbo].[Veiculoes]
+    ([VersaoID]);
+GO
+
+-- --------------------------------------------------
+-- Script has ended
+-- --------------------------------------------------
+
+
+
+SET IDENTITY_INSERT [dbo].[Blindagems] ON
+INSERT INTO [dbo].[Blindagems] ([IdBlindagem], [Descricao]) VALUES (1, N'I-III - Tiro de Fuzil M16, AK-47 e FAL')
+INSERT INTO [dbo].[Blindagems] ([IdBlindagem], [Descricao]) VALUES (2, N'0 - Nao possui')
+SET IDENTITY_INSERT [dbo].[Blindagems] OFF
+
+SET IDENTITY_INSERT [dbo].[Cambios] ON
+INSERT INTO [dbo].[Cambios] ([IdCambio], [Descricao]) VALUES (1, N'Manual')
+INSERT INTO [dbo].[Cambios] ([IdCambio], [Descricao]) VALUES (2, N'Automatico')
+SET IDENTITY_INSERT [dbo].[Cambios] OFF
+
+SET IDENTITY_INSERT [dbo].[Categorias] ON
+INSERT INTO [dbo].[Categorias] ([IdCategoria], [Descricao]) VALUES (1, N'Novo')
+INSERT INTO [dbo].[Categorias] ([IdCategoria], [Descricao]) VALUES (2, N'Usado')
+SET IDENTITY_INSERT [dbo].[Categorias] OFF
+
+SET IDENTITY_INSERT [dbo].[Combustivels] ON
+INSERT INTO [dbo].[Combustivels] ([Descricao], [IdCombustivel]) VALUES (N'Gasolina', 1)
+INSERT INTO [dbo].[Combustivels] ([Descricao], [IdCombustivel]) VALUES (N'Diesel', 2)
+SET IDENTITY_INSERT [dbo].[Combustivels] OFF
+
+SET IDENTITY_INSERT [dbo].[Cors] ON
+INSERT INTO [dbo].[Cors] ([IdCor], [Nome]) VALUES (1, N'Preto')
+INSERT INTO [dbo].[Cors] ([IdCor], [Nome]) VALUES (2, N'Branco')
+INSERT INTO [dbo].[Cors] ([IdCor], [Nome]) VALUES (3, N'Prata')
+INSERT INTO [dbo].[Cors] ([IdCor], [Nome]) VALUES (4, N'Vermelho')
+INSERT INTO [dbo].[Cors] ([IdCor], [Nome]) VALUES (5, N'Laranja')
+INSERT INTO [dbo].[Cors] ([IdCor], [Nome]) VALUES (6, N'Azul')
+INSERT INTO [dbo].[Cors] ([IdCor], [Nome]) VALUES (7, N'Marrom')
+INSERT INTO [dbo].[Cors] ([IdCor], [Nome]) VALUES (8, N'Ciano')
+INSERT INTO [dbo].[Cors] ([IdCor], [Nome]) VALUES (9, N'Vinho')
+SET IDENTITY_INSERT [dbo].[Cors] OFF
+
+SET IDENTITY_INSERT [dbo].[Marcas] ON
+INSERT INTO [dbo].[Marcas] ([Descricao], [IdMarca]) VALUES (N'Toyota', 1)
+INSERT INTO [dbo].[Marcas] ([Descricao], [IdMarca]) VALUES (N'Volkswagen', 2)
+INSERT INTO [dbo].[Marcas] ([Descricao], [IdMarca]) VALUES (N'Renault', 3)
+INSERT INTO [dbo].[Marcas] ([Descricao], [IdMarca]) VALUES (N'Fiat', 4)
+INSERT INTO [dbo].[Marcas] ([Descricao], [IdMarca]) VALUES (N'Honda', 5)
+INSERT INTO [dbo].[Marcas] ([Descricao], [IdMarca]) VALUES (N'Chevrolet', 6)
+INSERT INTO [dbo].[Marcas] ([Descricao], [IdMarca]) VALUES (N'Citroen', 7)
+INSERT INTO [dbo].[Marcas] ([Descricao], [IdMarca]) VALUES (N'Hyundai', 8)
+INSERT INTO [dbo].[Marcas] ([Descricao], [IdMarca]) VALUES (N'Peugeot', 9)
+INSERT INTO [dbo].[Marcas] ([Descricao], [IdMarca]) VALUES (N'Tucker', 10)
+SET IDENTITY_INSERT [dbo].[Marcas] OFF
+
+
+SET IDENTITY_INSERT [dbo].[Modeloes] ON
+INSERT INTO [dbo].[Modeloes] ([Descricao], [MarcaID], [IdModelo]) VALUES (N'Hilux', 1, 1)
+INSERT INTO [dbo].[Modeloes] ([Descricao], [MarcaID], [IdModelo]) VALUES (N'Gol', 2, 2)
+INSERT INTO [dbo].[Modeloes] ([Descricao], [MarcaID], [IdModelo]) VALUES (N'Corola', 1, 3)
+INSERT INTO [dbo].[Modeloes] ([Descricao], [MarcaID], [IdModelo]) VALUES (N'Honda Civic', 5, 4)
+INSERT INTO [dbo].[Modeloes] ([Descricao], [MarcaID], [IdModelo]) VALUES (N'Uno', 4, 5)
+INSERT INTO [dbo].[Modeloes] ([Descricao], [MarcaID], [IdModelo]) VALUES (N'Sandero', 3, 6)
+INSERT INTO [dbo].[Modeloes] ([Descricao], [MarcaID], [IdModelo]) VALUES (N'Camaro', 6, 7)
+INSERT INTO [dbo].[Modeloes] ([Descricao], [MarcaID], [IdModelo]) VALUES (N'Peugeot87', 9, 8)
+INSERT INTO [dbo].[Modeloes] ([Descricao], [MarcaID], [IdModelo]) VALUES (N'CG 160', 5, 9)
+INSERT INTO [dbo].[Modeloes] ([Descricao], [MarcaID], [IdModelo]) VALUES (N'Bitrem', 2, 10)
+INSERT INTO [dbo].[Modeloes] ([Descricao], [MarcaID], [IdModelo]) VALUES (N'Fox', 2, 11)
+INSERT INTO [dbo].[Modeloes] ([Descricao], [MarcaID], [IdModelo]) VALUES (N'Creta', 8, 12)
+INSERT INTO [dbo].[Modeloes] ([Descricao], [MarcaID], [IdModelo]) VALUES (N'Toro', 4, 13)
+INSERT INTO [dbo].[Modeloes] ([Descricao], [MarcaID], [IdModelo]) VALUES (N'Amarok', 2, 14)
+INSERT INTO [dbo].[Modeloes] ([Descricao], [MarcaID], [IdModelo]) VALUES (N'Veloster', 8, 15)
+INSERT INTO [dbo].[Modeloes] ([Descricao], [MarcaID], [IdModelo]) VALUES (N'Fusca', 2, 16)
+INSERT INTO [dbo].[Modeloes] ([Descricao], [MarcaID], [IdModelo]) VALUES (N'Torpedo', 10, 17)
+INSERT INTO [dbo].[Modeloes] ([Descricao], [MarcaID], [IdModelo]) VALUES (N'Opala SS', 6, 18)
+INSERT INTO [dbo].[Modeloes] ([Descricao], [MarcaID], [IdModelo]) VALUES (N'Sahara', 5, 19)
+INSERT INTO [dbo].[Modeloes] ([Descricao], [MarcaID], [IdModelo]) VALUES (N'Constellation', 2, 20)
+INSERT INTO [dbo].[Modeloes] ([Descricao], [MarcaID], [IdModelo]) VALUES (N'Dyna', 1, 21)
+SET IDENTITY_INSERT [dbo].[Modeloes] OFF
+
+
+SET IDENTITY_INSERT [dbo].[Opcionals] ON
+INSERT INTO [dbo].[Opcionals] ([Descricao], [IdOpcional]) VALUES (N'Vidro Eletrico', 1)
+INSERT INTO [dbo].[Opcionals] ([Descricao], [IdOpcional]) VALUES (N'Turbo', 2)
+INSERT INTO [dbo].[Opcionals] ([Descricao], [IdOpcional]) VALUES (N'Ar condicionado', 3)
+INSERT INTO [dbo].[Opcionals] ([Descricao], [IdOpcional]) VALUES (N'Alarme', 4)
+SET IDENTITY_INSERT [dbo].[Opcionals] OFF
+
+SET IDENTITY_INSERT [dbo].[Usuarios] ON
+INSERT INTO [dbo].[Usuarios] ([Email], [IdUsuario], [Senha], [DataCadastro], [DataUltimoAcesso], [Ativo]) VALUES (N'admin@hotmail.com', 1, N'7C4A8D09CA3762AF61E59520943DC26494F8941B', N'2023-10-14 14:47:24', N'2023-10-27 15:53:24', 1)
+SET IDENTITY_INSERT [dbo].[Usuarios] OFF
+
+
+SET IDENTITY_INSERT [dbo].[Versaos] ON
+INSERT INTO [dbo].[Versaos] ([Descricao], [ModeloID], [IdVersao]) VALUES (N'4x4 2.8 ', 1, 1)
+INSERT INTO [dbo].[Versaos] ([Descricao], [ModeloID], [IdVersao]) VALUES (N'XLI 1.6', 3, 2)
+INSERT INTO [dbo].[Versaos] ([Descricao], [ModeloID], [IdVersao]) VALUES (N'1.6 MI', 2, 3)
+INSERT INTO [dbo].[Versaos] ([Descricao], [ModeloID], [IdVersao]) VALUES (N'2.0 VTEC', 4, 6)
+INSERT INTO [dbo].[Versaos] ([Descricao], [ModeloID], [IdVersao]) VALUES (N'1.0', 5, 7)
+INSERT INTO [dbo].[Versaos] ([Descricao], [ModeloID], [IdVersao]) VALUES (N'1.6 Flex', 6, 8)
+INSERT INTO [dbo].[Versaos] ([Descricao], [ModeloID], [IdVersao]) VALUES (N'V8 6.2L', 7, 9)
+INSERT INTO [dbo].[Versaos] ([Descricao], [ModeloID], [IdVersao]) VALUES (N'2.5', 8, 10)
+INSERT INTO [dbo].[Versaos] ([Descricao], [ModeloID], [IdVersao]) VALUES (N'160cc', 9, 11)
+INSERT INTO [dbo].[Versaos] ([Descricao], [ModeloID], [IdVersao]) VALUES (N'210cv', 10, 12)
+INSERT INTO [dbo].[Versaos] ([Descricao], [ModeloID], [IdVersao]) VALUES (N'1.6 Flex', 11, 13)
+INSERT INTO [dbo].[Versaos] ([Descricao], [ModeloID], [IdVersao]) VALUES (N'1.6 Flex', 12, 14)
+INSERT INTO [dbo].[Versaos] ([Descricao], [ModeloID], [IdVersao]) VALUES (N'1.3 TURBO 270 FLEX', 13, 16)
+INSERT INTO [dbo].[Versaos] ([Descricao], [ModeloID], [IdVersao]) VALUES (N'3.0 V6', 14, 18)
+INSERT INTO [dbo].[Versaos] ([Descricao], [ModeloID], [IdVersao]) VALUES (N'1.6 16V', 15, 19)
+INSERT INTO [dbo].[Versaos] ([Descricao], [ModeloID], [IdVersao]) VALUES (N'1.6 8V', 16, 20)
+INSERT INTO [dbo].[Versaos] ([Descricao], [ModeloID], [IdVersao]) VALUES (N'V6', 17, 21)
+INSERT INTO [dbo].[Versaos] ([Descricao], [ModeloID], [IdVersao]) VALUES (N'4.1 V6', 18, 23)
+INSERT INTO [dbo].[Versaos] ([Descricao], [ModeloID], [IdVersao]) VALUES (N'350cc', 19, 24)
+INSERT INTO [dbo].[Versaos] ([Descricao], [ModeloID], [IdVersao]) VALUES (N'390cv', 20, 25)
+INSERT INTO [dbo].[Versaos] ([Descricao], [ModeloID], [IdVersao]) VALUES (N'2,980cc V4', 21, 26)
+SET IDENTITY_INSERT [dbo].[Versaos] OFF
+
+
+SET IDENTITY_INSERT [dbo].[Veiculoes] ON
+INSERT INTO [dbo].[Veiculoes] ([AnoFabricacao], [AnoModelo], [BlindagemID], [CambioID], [CombustivelID], [CorID], [IdVeiculo], [VersaoID], [Placa], [Portas], [Quilometragem], [PrecoNormal], [Acessos], [Destaque], [DataCadastro], [Descricao], [AceitaPermuta], [VeiculoComDivida], [CondicaoPagamento], [Ranking], [PrecoPromocional], [UsuarioID], [QtdeEstoque], [CategoriaID]) VALUES (2010, 2022, 1, 1, 1, 3, 1, 1, N'MTB-5669', 5, NULL, CAST(50000.00 AS Decimal(18, 2)), 0, 0, N'2023-03-25 12:30:00', N'Hilux', 0, 0, N'A vista', CAST(1.00 AS Decimal(18, 2)), CAST(47500.00 AS Decimal(18, 2)), 1, 1, 1)
+INSERT INTO [dbo].[Veiculoes] ([AnoFabricacao], [AnoModelo], [BlindagemID], [CambioID], [CombustivelID], [CorID], [IdVeiculo], [VersaoID], [Placa], [Portas], [Quilometragem], [PrecoNormal], [Acessos], [Destaque], [DataCadastro], [Descricao], [AceitaPermuta], [VeiculoComDivida], [CondicaoPagamento], [Ranking], [PrecoPromocional], [UsuarioID], [QtdeEstoque], [CategoriaID]) VALUES (2010, 2022, 1, 1, 1, 4, 2, 2, N'HNH-4753', 5, NULL, CAST(50000.00 AS Decimal(18, 2)), 0, 0, N'2023-03-25 12:30:00', N'Corolla', 0, 0, N'A vista', CAST(1.00 AS Decimal(18, 2)), CAST(47500.00 AS Decimal(18, 2)), 1, 1, 1)
+INSERT INTO [dbo].[Veiculoes] ([AnoFabricacao], [AnoModelo], [BlindagemID], [CambioID], [CombustivelID], [CorID], [IdVeiculo], [VersaoID], [Placa], [Portas], [Quilometragem], [PrecoNormal], [Acessos], [Destaque], [DataCadastro], [Descricao], [AceitaPermuta], [VeiculoComDivida], [CondicaoPagamento], [Ranking], [PrecoPromocional], [UsuarioID], [QtdeEstoque], [CategoriaID]) VALUES (1990, 1989, 1, 2, 2, 2, 3, 3, N'YTP-6865', 3, NULL, CAST(47000.00 AS Decimal(18, 2)), 0, 0, N'2023-11-21 00:00:00', N'Gol', 0, 0, N'A vista', CAST(1.00 AS Decimal(18, 2)), CAST(45000.00 AS Decimal(18, 2)), 1, 1, 1)
+INSERT INTO [dbo].[Veiculoes] ([AnoFabricacao], [AnoModelo], [BlindagemID], [CambioID], [CombustivelID], [CorID], [IdVeiculo], [VersaoID], [Placa], [Portas], [Quilometragem], [PrecoNormal], [Acessos], [Destaque], [DataCadastro], [Descricao], [AceitaPermuta], [VeiculoComDivida], [CondicaoPagamento], [Ranking], [PrecoPromocional], [UsuarioID], [QtdeEstoque], [CategoriaID]) VALUES (2020, 2019, 1, 1, 1, 4, 4, 13, N'BAT-1313', 5, NULL, CAST(100000.00 AS Decimal(18, 2)), 0, 0, N'2023-11-21 00:00:00', N'Fox', 0, 0, N'A vista', CAST(1.00 AS Decimal(18, 2)), CAST(90000.00 AS Decimal(18, 2)), 1, 1, 1)
+INSERT INTO [dbo].[Veiculoes] ([AnoFabricacao], [AnoModelo], [BlindagemID], [CambioID], [CombustivelID], [CorID], [IdVeiculo], [VersaoID], [Placa], [Portas], [Quilometragem], [PrecoNormal], [Acessos], [Destaque], [DataCadastro], [Descricao], [AceitaPermuta], [VeiculoComDivida], [CondicaoPagamento], [Ranking], [PrecoPromocional], [UsuarioID], [QtdeEstoque], [CategoriaID]) VALUES (2010, 2022, 1, 1, 1, 3, 5, 14, N'TES-1515', 5, NULL, CAST(30000.00 AS Decimal(18, 2)), 0, 0, N'2023-11-21 00:00:00', N'Creta', 0, 0, N'A vista', CAST(1.00 AS Decimal(18, 2)), CAST(27000.00 AS Decimal(18, 2)), 1, 1, 1)
+INSERT INTO [dbo].[Veiculoes] ([AnoFabricacao], [AnoModelo], [BlindagemID], [CambioID], [CombustivelID], [CorID], [IdVeiculo], [VersaoID], [Placa], [Portas], [Quilometragem], [PrecoNormal], [Acessos], [Destaque], [DataCadastro], [Descricao], [AceitaPermuta], [VeiculoComDivida], [CondicaoPagamento], [Ranking], [PrecoPromocional], [UsuarioID], [QtdeEstoque], [CategoriaID]) VALUES (2020, 2022, 1, 2, 2, 3, 8, 16, N'POR-987', 4, NULL, CAST(700000.00 AS Decimal(18, 2)), 0, 0, N'2023-11-22 00:00:00', N'Fiat Toro', 0, 0, N'A vista', CAST(1.00 AS Decimal(18, 2)), CAST(650000.00 AS Decimal(18, 2)), 1, 1, 1)
+INSERT INTO [dbo].[Veiculoes] ([AnoFabricacao], [AnoModelo], [BlindagemID], [CambioID], [CombustivelID], [CorID], [IdVeiculo], [VersaoID], [Placa], [Portas], [Quilometragem], [PrecoNormal], [Acessos], [Destaque], [DataCadastro], [Descricao], [AceitaPermuta], [VeiculoComDivida], [CondicaoPagamento], [Ranking], [PrecoPromocional], [UsuarioID], [QtdeEstoque], [CategoriaID]) VALUES (2023, 2023, 2, 1, 1, 1, 9, 18, N'PPK-6969', 4, NULL, CAST(500000.00 AS Decimal(18, 2)), 0, 0, N'2023-08-18 00:00:00', N'Amarok', 0, 0, N'A vista', CAST(1.00 AS Decimal(18, 2)), CAST(400000.00 AS Decimal(18, 2)), 1, 1, 1)
+INSERT INTO [dbo].[Veiculoes] ([AnoFabricacao], [AnoModelo], [BlindagemID], [CambioID], [CombustivelID], [CorID], [IdVeiculo], [VersaoID], [Placa], [Portas], [Quilometragem], [PrecoNormal], [Acessos], [Destaque], [DataCadastro], [Descricao], [AceitaPermuta], [VeiculoComDivida], [CondicaoPagamento], [Ranking], [PrecoPromocional], [UsuarioID], [QtdeEstoque], [CategoriaID]) VALUES (2023, 2023, 1, 1, 1, 4, 10, 11, N'PIC-6252', 0, NULL, CAST(20000.00 AS Decimal(18, 2)), 0, 0, N'2023-03-15 00:00:00', N'CG 160', 0, 0, N'A vista', CAST(1.00 AS Decimal(18, 2)), CAST(180000.00 AS Decimal(18, 2)), 1, 1, 1)
+INSERT INTO [dbo].[Veiculoes] ([AnoFabricacao], [AnoModelo], [BlindagemID], [CambioID], [CombustivelID], [CorID], [IdVeiculo], [VersaoID], [Placa], [Portas], [Quilometragem], [PrecoNormal], [Acessos], [Destaque], [DataCadastro], [Descricao], [AceitaPermuta], [VeiculoComDivida], [CondicaoPagamento], [Ranking], [PrecoPromocional], [UsuarioID], [QtdeEstoque], [CategoriaID]) VALUES (2010, 2010, 1, 1, 1, 3, 11, 3, N'SAF-3243', 4, NULL, CAST(150000.00 AS Decimal(18, 2)), 0, 0, N'2020-03-02 00:00:00', N'Gol G3', 0, 0, N'A vista', CAST(1.00 AS Decimal(18, 2)), CAST(14500.00 AS Decimal(18, 2)), 1, 2, 1)
+INSERT INTO [dbo].[Veiculoes] ([AnoFabricacao], [AnoModelo], [BlindagemID], [CambioID], [CombustivelID], [CorID], [IdVeiculo], [VersaoID], [Placa], [Portas], [Quilometragem], [PrecoNormal], [Acessos], [Destaque], [DataCadastro], [Descricao], [AceitaPermuta], [VeiculoComDivida], [CondicaoPagamento], [Ranking], [PrecoPromocional], [UsuarioID], [QtdeEstoque], [CategoriaID]) VALUES (2020, 2020, 2, 2, 1, 2, 15, 6, N'MOR-9090', 4, NULL, CAST(45000.00 AS Decimal(18, 2)), 0, 0, N'2020-07-12 00:00:00', N'Honda Civic', 0, 0, N'A vista', CAST(2.00 AS Decimal(18, 2)), CAST(35000.00 AS Decimal(18, 2)), 1, 2, 1)
+INSERT INTO [dbo].[Veiculoes] ([AnoFabricacao], [AnoModelo], [BlindagemID], [CambioID], [CombustivelID], [CorID], [IdVeiculo], [VersaoID], [Placa], [Portas], [Quilometragem], [PrecoNormal], [Acessos], [Destaque], [DataCadastro], [Descricao], [AceitaPermuta], [VeiculoComDivida], [CondicaoPagamento], [Ranking], [PrecoPromocional], [UsuarioID], [QtdeEstoque], [CategoriaID]) VALUES (2022, 2022, 1, 1, 1, 4, 16, 8, N'POR-0000', 1, NULL, CAST(450000.00 AS Decimal(18, 2)), 0, 0, N'2023-12-23 00:00:00', N'Sandero', 0, 0, N'A vista', CAST(1.00 AS Decimal(18, 2)), CAST(46000.00 AS Decimal(18, 2)), 1, 1, 1)
+INSERT INTO [dbo].[Veiculoes] ([AnoFabricacao], [AnoModelo], [BlindagemID], [CambioID], [CombustivelID], [CorID], [IdVeiculo], [VersaoID], [Placa], [Portas], [Quilometragem], [PrecoNormal], [Acessos], [Destaque], [DataCadastro], [Descricao], [AceitaPermuta], [VeiculoComDivida], [CondicaoPagamento], [Ranking], [PrecoPromocional], [UsuarioID], [QtdeEstoque], [CategoriaID]) VALUES (2020, 2019, 1, 2, 1, 6, 17, 19, N'GAN-7727', 3, NULL, CAST(80000.00 AS Decimal(18, 2)), 0, 0, N'2021-12-21 00:00:00', N'Veloster', 0, 0, N'A vista', CAST(1.00 AS Decimal(18, 2)), CAST(30000.00 AS Decimal(18, 2)), 1, 1, 1)
+INSERT INTO [dbo].[Veiculoes] ([AnoFabricacao], [AnoModelo], [BlindagemID], [CambioID], [CombustivelID], [CorID], [IdVeiculo], [VersaoID], [Placa], [Portas], [Quilometragem], [PrecoNormal], [Acessos], [Destaque], [DataCadastro], [Descricao], [AceitaPermuta], [VeiculoComDivida], [CondicaoPagamento], [Ranking], [PrecoPromocional], [UsuarioID], [QtdeEstoque], [CategoriaID]) VALUES (2023, 2023, 1, 2, 1, 9, 20, 6, N'PIN-7682', 4, NULL, CAST(75000.00 AS Decimal(18, 2)), 0, 0, N'2023-12-05 00:00:00', N'Honda HRV', 0, 0, N'A vista', CAST(1.00 AS Decimal(18, 2)), CAST(60000.00 AS Decimal(18, 2)), 1, 1, 1)
+INSERT INTO [dbo].[Veiculoes] ([AnoFabricacao], [AnoModelo], [BlindagemID], [CambioID], [CombustivelID], [CorID], [IdVeiculo], [VersaoID], [Placa], [Portas], [Quilometragem], [PrecoNormal], [Acessos], [Destaque], [DataCadastro], [Descricao], [AceitaPermuta], [VeiculoComDivida], [CondicaoPagamento], [Ranking], [PrecoPromocional], [UsuarioID], [QtdeEstoque], [CategoriaID]) VALUES (2021, 2022, 1, 1, 1, 5, 21, 20, N'CAR-0832', 4, NULL, CAST(30000.00 AS Decimal(18, 2)), 0, 0, N'2023-11-21 00:00:00', N'Fusca', 0, 0, N'A vista', CAST(1.00 AS Decimal(18, 2)), CAST(25000.00 AS Decimal(18, 2)), 1, 1, 1)
+INSERT INTO [dbo].[Veiculoes] ([AnoFabricacao], [AnoModelo], [BlindagemID], [CambioID], [CombustivelID], [CorID], [IdVeiculo], [VersaoID], [Placa], [Portas], [Quilometragem], [PrecoNormal], [Acessos], [Destaque], [DataCadastro], [Descricao], [AceitaPermuta], [VeiculoComDivida], [CondicaoPagamento], [Ranking], [PrecoPromocional], [UsuarioID], [QtdeEstoque], [CategoriaID]) VALUES (2023, 2023, 1, 1, 1, 7, 22, 21, N'LAS-4123', 4, NULL, CAST(5000000.00 AS Decimal(18, 2)), 0, 0, N'2023-06-03 00:00:00', N'Torpedo', 0, 0, N'A prazo', CAST(1.00 AS Decimal(18, 2)), CAST(300000.00 AS Decimal(18, 2)), 1, 1, 1)
+INSERT INTO [dbo].[Veiculoes] ([AnoFabricacao], [AnoModelo], [BlindagemID], [CambioID], [CombustivelID], [CorID], [IdVeiculo], [VersaoID], [Placa], [Portas], [Quilometragem], [PrecoNormal], [Acessos], [Destaque], [DataCadastro], [Descricao], [AceitaPermuta], [VeiculoComDivida], [CondicaoPagamento], [Ranking], [PrecoPromocional], [UsuarioID], [QtdeEstoque], [CategoriaID]) VALUES (2022, 2023, 2, 1, 1, 5, 23, 9, N'FIF-7361', 2, NULL, CAST(100000.00 AS Decimal(18, 2)), 0, 0, N'2023-11-05 00:00:00', N'Camaro', 0, 0, N'A vista', CAST(1.00 AS Decimal(18, 2)), CAST(97500.00 AS Decimal(18, 2)), 1, 1, 1)
+INSERT INTO [dbo].[Veiculoes] ([AnoFabricacao], [AnoModelo], [BlindagemID], [CambioID], [CombustivelID], [CorID], [IdVeiculo], [VersaoID], [Placa], [Portas], [Quilometragem], [PrecoNormal], [Acessos], [Destaque], [DataCadastro], [Descricao], [AceitaPermuta], [VeiculoComDivida], [CondicaoPagamento], [Ranking], [PrecoPromocional], [UsuarioID], [QtdeEstoque], [CategoriaID]) VALUES (1976, 1977, 2, 1, 2, 8, 25, 23, N'BOL-4572', 5, NULL, CAST(750000.00 AS Decimal(18, 2)), 0, 0, N'2022-12-12 00:00:00', N'Opala SS', 0, 0, N'A vista', CAST(1.00 AS Decimal(18, 2)), CAST(72500.00 AS Decimal(18, 2)), 1, 1, 1)
+INSERT INTO [dbo].[Veiculoes] ([AnoFabricacao], [AnoModelo], [BlindagemID], [CambioID], [CombustivelID], [CorID], [IdVeiculo], [VersaoID], [Placa], [Portas], [Quilometragem], [PrecoNormal], [Acessos], [Destaque], [DataCadastro], [Descricao], [AceitaPermuta], [VeiculoComDivida], [CondicaoPagamento], [Ranking], [PrecoPromocional], [UsuarioID], [QtdeEstoque], [CategoriaID]) VALUES (2012, 2012, 1, 2, 1, 2, 26, 3, N'JKL-1783', 5, NULL, CAST(80000.00 AS Decimal(18, 2)), 0, 0, N'2022-03-25 00:00:00', N'Gol G6', 0, 0, N'A prazo', CAST(1.00 AS Decimal(18, 2)), CAST(77500.00 AS Decimal(18, 2)), 1, 1, 1)
+INSERT INTO [dbo].[Veiculoes] ([AnoFabricacao], [AnoModelo], [BlindagemID], [CambioID], [CombustivelID], [CorID], [IdVeiculo], [VersaoID], [Placa], [Portas], [Quilometragem], [PrecoNormal], [Acessos], [Destaque], [DataCadastro], [Descricao], [AceitaPermuta], [VeiculoComDivida], [CondicaoPagamento], [Ranking], [PrecoPromocional], [UsuarioID], [QtdeEstoque], [CategoriaID]) VALUES (1999, 2000, 2, 1, 1, 4, 28, 24, N'LKJ-7542', 0, NULL, CAST(15000.00 AS Decimal(18, 2)), 0, 0, N'2018-02-04 00:00:00', N'Sahara', 0, 0, N'A prazo', CAST(1.00 AS Decimal(18, 2)), CAST(14250.00 AS Decimal(18, 2)), 1, 1, 1)
+INSERT INTO [dbo].[Veiculoes] ([AnoFabricacao], [AnoModelo], [BlindagemID], [CambioID], [CombustivelID], [CorID], [IdVeiculo], [VersaoID], [Placa], [Portas], [Quilometragem], [PrecoNormal], [Acessos], [Destaque], [DataCadastro], [Descricao], [AceitaPermuta], [VeiculoComDivida], [CondicaoPagamento], [Ranking], [PrecoPromocional], [UsuarioID], [QtdeEstoque], [CategoriaID]) VALUES (2012, 2012, 1, 1, 2, 4, 32, 25, N'ITU-9147', 3, NULL, CAST(500000.00 AS Decimal(18, 2)), 0, 0, N'2021-08-17 00:00:00', N'Constellation', 0, 0, N'A vista', CAST(1.00 AS Decimal(18, 2)), CAST(480000.00 AS Decimal(18, 2)), 1, 1, 1)
+INSERT INTO [dbo].[Veiculoes] ([AnoFabricacao], [AnoModelo], [BlindagemID], [CambioID], [CombustivelID], [CorID], [IdVeiculo], [VersaoID], [Placa], [Portas], [Quilometragem], [PrecoNormal], [Acessos], [Destaque], [DataCadastro], [Descricao], [AceitaPermuta], [VeiculoComDivida], [CondicaoPagamento], [Ranking], [PrecoPromocional], [UsuarioID], [QtdeEstoque], [CategoriaID]) VALUES (2003, 2003, 2, 1, 1, 2, 33, 26, N'JPN-5624', 3, NULL, CAST(200000.00 AS Decimal(18, 2)), 0, 0, N'2022-07-19 00:00:00', N'Dyna', 0, 0, N'A prazo', CAST(1.00 AS Decimal(18, 2)), CAST(190000.00 AS Decimal(18, 2)), 1, 1, 1)
+SET IDENTITY_INSERT [dbo].[Veiculoes] OFF
+
+
+
+SET IDENTITY_INSERT [dbo].[Opcionaisveiculos] ON
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (1, 1, 2)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (2, 2, 1)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (3, 2, 2)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (4, 3, 1)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (5, 4, 1)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (6, 4, 2)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (7, 5, 2)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (25, 5, 3)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (28, 1, 4)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (29, 8, 3)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (30, 9, 2)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (31, 9, 1)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (35, 11, 1)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (36, 11, 4)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (37, 15, 2)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (38, 15, 3)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (39, 16, 1)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (40, 16, 2)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (41, 17, 1)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (42, 17, 2)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (43, 17, 4)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (44, 20, 1)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (45, 21, 2)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (46, 21, 4)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (47, 22, 3)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (48, 23, 2)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (49, 25, 3)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (50, 25, 2)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (51, 26, 4)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (52, 32, 1)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (53, 32, 2)
+INSERT INTO [dbo].[Opcionaisveiculos] ([IDopVe], [IDVeiculo], [IDOpcional]) VALUES (54, 33, 4)
+SET IDENTITY_INSERT [dbo].[Opcionaisveiculos] OFF
+
+

@@ -1,0 +1,513 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.container1 {
+    width: 100vw;
+    background-color: #F2F2F2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "h h h"
+        "n m m"
+        "n m m"
+        "no no no"
+        "f f f";
+}
+
+
+
+
+
+
+/*Itens header*/
+header {
+    grid-area: h;
+    margin-bottom: 1vw;
+}
+
+#nav1 {
+    width: 100vw;
+    padding: 20px;
+}
+
+.titulo {
+    background-color: #8f0000;
+    text-align: center;
+    color: white;
+    height: 22px;
+    width: 100vw;
+}
+
+
+
+
+
+/*Navbar*/
+#navbar {
+    grid-area: n;
+    background-color: white;
+    margin-left: 15vw;
+    text-align: center;
+    border-radius: 5px;
+    margin: 2vw 1vw 1vw 5vw;
+}
+
+
+/*Itens main*/
+main {
+    grid-area: m;
+    margin: 1vw 5vw 1vw 0;
+}
+
+
+
+/*Itens card*/
+.card {
+    margin-left: 1vw;
+    font-size: 0.8rem;
+    margin-bottom: 1vw;
+}
+
+.card-img-top {
+    align-items:center;
+    max-width: 12vw;
+    max-height: 6vw;
+}
+
+/*Itens novidade*/
+.novidade {
+    grid-area: no;
+    margin: 5vw 5vw 5vw 5vw;
+    border-radius: 5px;
+    display: flex;
+    font-size: 0.8rem;
+}
+
+#div-left > img {
+    width: 100%;
+    height: 33vw;
+}
+
+#div-right > input {
+    border-radius: 0;
+}
+
+#div-right {
+    background-color: #8f0000;
+    width: 45%;
+    padding: 3vw;
+    color: white;
+}
+
+#div-left {
+    width: 55%;
+}
+
+.itens {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#btn2 {
+    border-style: solid;
+    border-color: white;
+    color: white;
+    border-radius: 0;
+    margin-top: 1vw;
+    width: 100%;
+}
+
+
+/*Itens footer*/
+footer {
+    grid-area: f;
+}
+
+.container-footer {
+    display: flex;
+    margin: 0 15vw 2vw 15vw;
+    justify-content: space-between;
+}
+
+#div-footer-1 {
+    color: #8f0000;
+    width: 16vw;
+    text-align: left;
+    margin: 0 2vw 0 0;
+}
+
+    #div-footer-1 > a {
+        color: #8f0000;
+        text-decoration: none;
+    }
+
+#div-footer-2 {
+    color: #8f0000;
+    width: 16vw;
+    text-align: left;
+}
+
+    #div-footer-2 > a {
+        color: #8f0000;
+        text-decoration: none;
+        font-size: 0.8rem;
+    }
+
+#div-footer-3 {
+    color: #8f0000;
+    width: 16vw;
+    text-align: left;
+    margin: 0 0 0 2vw;
+}
+
+    #div-footer-3 > a {
+        color: #8f0000;
+        text-decoration: none;
+        font-size: 0.8rem;
+    }
+
+#div-footer-4 {
+    color: #8f0000;
+    width: 16vw;
+    text-align: left;
+}
+
+    #div-footer-4 > a {
+        color: #8f0000;
+        text-decoration: none;
+        font-size: 0.8rem;
+    }
+
+#div-footer-5 {
+    color: #8f0000;
+    width: 16vw;
+    text-align: left;
+    margin-left: 2vw;
+}
+
+    #div-footer-5 > a {
+        color: #8f0000;
+        text-decoration: none;
+        font-size: 0.8rem;
+    }
+
+#btn1 {
+    border-style: solid;
+    border-color: #8f0000;
+    color: #8f0000;
+    border-radius: 0;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+#copyright {
+    text-align: center;
+    position: absolute;
+    height: 22px;
+    background-color: #8f0000;
+    color: white;
+    width: 100%;
+}
+
+
+
+
+
+/*Tela normal*/
+#RadioButtonList1 {
+    margin: 0 1vw 1vh 1vw;
+    text-align: center;
+    font-size: 1em;
+    text-align: center;
+    margin: 0 1vw 1vw 1vw;
+    width: 90%;
+}
+
+
+#tamanhoCard {
+    width: 19em;
+}
+
+#imgLogo {
+    width: 10vw;
+}
+
+#btnFiltro {
+    color: #8f0000;
+    border-color: #8f0000;
+}
+
+    #btnFiltro:hover {
+        background-color: #8f0000;
+        color: white;
+    }
+
+
+#btnVeiculo {
+    background-color: #8f0000;
+}
+
+#contentFiltros {
+    margin: 1vw;
+}
+
+#procurar {
+    width: 20vw;
+    margin: auto;
+    margin-bottom: 1vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .container1 {
+        width: 100vw;
+        background-color: #F2F2F2;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "h h h"
+            "n n n"
+            "m m m"
+            "no no no"
+            "f f f";
+    }
+
+    #imgLogo {
+        width: 10vw;
+    }
+
+    #navbar {
+        grid-area: n;
+        background-color: white;
+        margin: 1vw 5vw 1vw 5vw;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    main {
+        grid-area: m;
+        margin: 0 5vw 0 4vw;
+    }
+
+    #RadioButtonList1 {
+        margin: 0 1vw 1vh 1vw;
+        text-align: center;
+        font-size: 1.2em;
+        width: 100%;
+    }
+
+    .itens {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #contentFiltros {
+        margin: 0 3vw 0 3vw;
+    }
+
+
+    #procurar {
+        width: 20vw;
+        margin: 0 35vw 2vw 35vw;
+    }
+
+    #btnFiltro {
+        margin-bottom: 1.5vw;
+    }
+
+    /*Novidade*/
+
+    .novidade {
+        grid-area: no;
+        margin: 5vw 5vw 5vw 5vw;
+        border-radius: 5px;
+        display: flex;
+        font-size: 0.8rem;
+    }
+
+
+
+
+    #tamanhoCard {
+        width: 18em;
+    
+    }
+    
+    
+    
+    
+    
+    /*Footer*/
+    .container-footer {
+        display: flex;
+        margin: 0 5vw 2vw 5vw;
+        justify-content: space-between;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 960px) {
+    .container1 {
+        width: 100vw;
+        background-color: #F2F2F2;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "h h h"
+            "n n n"
+            "m m m"
+            "no no no"
+            "f f f";
+    }
+
+    #imgLogo {
+        width: 10vw;
+    }
+
+    #navbar {
+        grid-area: n;
+        background-color: white;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    main {
+        grid-area: m;
+        margin: 0 5vw 0 4vw;
+    }
+
+
+
+    .itens {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #contentFiltros {
+        align-items: center;
+    }
+
+
+    #btnFiltro {
+        margin-bottom: 1.5vw;
+    }
+
+    #link1 {
+        color: black;
+    }
+    #link1:hover {
+        color: #8f0000;
+
+    }
+
+
+
+    #tamanhoCard {
+        width: 18em;
+    }
+
+    /*Novidade*/
+    .novidade {
+        grid-area: no;
+        margin: 5vw 5vw 5vw 5vw;
+        border-radius: 5px;
+        display: flex;
+        font-size: 0.8rem;
+    }
+
+
+
+    /*Footer*/
+
+    .container-footer {
+        display: flex;
+        margin: 0 5vw 2vw 5vw;
+        justify-content: space-between;
+    }
+
+    #div-footer-1 > a {
+        font-size: 0.6rem;
+    }
+
+    #div-footer-2 > a {
+        font-size: 0.6rem;
+    }
+
+    #div-footer-3 > a {
+        font-size: 0.6rem;
+    }
+
+    #div-footer-4 > a {
+        font-size: 0.6rem;
+    }
+
+    #div-footer-5 > a {
+        font-size: 0.6rem;
+    }
+  
+    #div-footer-1 > h5 {
+        font-size: 0.8rem;
+    }
+
+    #div-footer-2 > h6 {
+        font-size: 0.7rem;
+    }
+
+    #div-footer-3 > h6 {
+        font-size: 0.7rem;
+    }
+
+    #div-footer-4 > h6 {
+        font-size: 0.7rem;
+    }
+
+    #div-footer-5 > h6 {
+        font-size: 0.7rem;
+    }
+
+    #btn1 {
+        width: 60%;
+        font-size: 0.6rem;
+        margin: auto;
+    }
+
+    
+
+    
+
+    
+}

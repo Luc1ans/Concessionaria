@@ -1,0 +1,460 @@
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\Concessionaria.dll.config
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\Concessionaria.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\Concessionaria.pdb
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\csc.exe
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\csc.exe.config
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\csc.rsp
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\csi.exe
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\csi.exe.config
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\csi.rsp
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.AppContext.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.Console.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.IO.Compression.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.Net.Http.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.Net.Sockets.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.ValueTuple.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.Xml.XPath.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\vbc.exe
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\vbc.exe.config
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\vbc.rsp
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\VBCSCompiler.exe
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.AssemblyReference.cache
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.CoreCompileInputs.cache
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.CopyComplete
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\obj\Debug\Concessionaria.dll
+C:\Users\20221stads001\source\repos\Concessionaria\Concessionaria\obj\Debug\Concessionaria.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\Concessionaria.dll.config
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\Concessionaria.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\Concessionaria.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csc.exe
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csc.exe.config
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csc.rsp
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csi.exe
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csi.exe.config
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csi.rsp
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.AppContext.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Console.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.IO.Compression.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Net.Http.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Net.Sockets.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.ValueTuple.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Xml.XPath.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\vbc.exe
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\vbc.exe.config
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\vbc.rsp
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\VBCSCompiler.exe
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\EntityFramework.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\EntityFramework.SqlServer.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\EntityFramework.xml
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\EntityFramework.SqlServer.xml
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.AssemblyReference.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.CoreCompileInputs.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.CopyComplete
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\obj\Debug\Concessionaria.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho Concessionaria\Concessionaria\Concessionaria\obj\Debug\Concessionaria.pdb
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.CoreCompileInputs.cache
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.AssemblyReference.cache
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\Concessionaria.dll.config
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\Concessionaria.dll
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\Concessionaria.pdb
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csc.exe
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csc.exe.config
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csc.rsp
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csi.exe
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csi.exe.config
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csi.rsp
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Buffers.dll
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Memory.dll
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\vbc.exe
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\vbc.exe.config
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\vbc.rsp
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\VBCSCompiler.exe
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\EntityFramework.dll
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\EntityFramework.SqlServer.dll
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\EntityFramework.xml
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\EntityFramework.SqlServer.xml
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.CopyComplete
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\obj\Debug\Concessionaria.dll
+C:\Users\pedro\Desktop\Trabalho Concessionaria\Concessionaria\Concessionaria\obj\Debug\Concessionaria.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\Concessionaria.dll.config
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\Concessionaria.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\Concessionaria.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csc.exe
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csc.exe.config
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csc.rsp
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csi.exe
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csi.exe.config
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csi.rsp
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Buffers.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Memory.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\vbc.exe
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\vbc.exe.config
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\vbc.rsp
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\VBCSCompiler.exe
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\EntityFramework.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\EntityFramework.SqlServer.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\EntityFramework.xml
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\EntityFramework.SqlServer.xml
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.AssemblyReference.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.CoreCompileInputs.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.CopyComplete
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\obj\Debug\Concessionaria.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\Concessionaria\obj\Debug\Concessionaria.pdb
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\Concessionaria.dll.config
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\Concessionaria.dll
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\Concessionaria.pdb
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csc.exe
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csc.exe.config
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csc.rsp
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csi.exe
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csi.exe.config
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\csi.rsp
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Buffers.dll
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Memory.dll
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\vbc.exe
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\vbc.exe.config
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\vbc.rsp
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\VBCSCompiler.exe
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\EntityFramework.dll
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\EntityFramework.SqlServer.dll
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\EntityFramework.xml
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\EntityFramework.SqlServer.xml
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.AssemblyReference.cache
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.CoreCompileInputs.cache
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.CopyComplete
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\obj\Debug\Concessionaria.dll
+C:\Users\20221stads001\Desktop\Concessionaria\Concessionaria\Concessionaria\obj\Debug\Concessionaria.pdb
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\Concessionaria.dll.config
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\Concessionaria.dll
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\Concessionaria.pdb
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\csc.exe
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\csc.exe.config
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\csc.rsp
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\csi.exe
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\csi.exe.config
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\csi.rsp
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\System.Buffers.dll
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\System.Memory.dll
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\vbc.exe
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\vbc.exe.config
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\vbc.rsp
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\VBCSCompiler.exe
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\EntityFramework.dll
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\EntityFramework.SqlServer.dll
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\EntityFramework.xml
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\EntityFramework.SqlServer.xml
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.AssemblyReference.cache
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.CoreCompileInputs.cache
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.CopyComplete
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\obj\Debug\Concessionaria.dll
+C:\Users\pedro\Desktop\Concessionaria 2\Concessionaria\Concessionaria\obj\Debug\Concessionaria.pdb
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\Concessionaria.dll.config
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\Concessionaria.dll
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\Concessionaria.pdb
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\csc.exe
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\csc.exe.config
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\csc.rsp
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\csi.exe
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\csi.exe.config
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\csi.rsp
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\System.Buffers.dll
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\System.Memory.dll
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\vbc.exe
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\vbc.exe.config
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\vbc.rsp
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\VBCSCompiler.exe
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\EntityFramework.dll
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\EntityFramework.SqlServer.dll
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\EntityFramework.xml
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\EntityFramework.SqlServer.xml
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.AssemblyReference.cache
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.CoreCompileInputs.cache
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.CopyComplete
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\obj\Debug\Concessionaria.dll
+C:\Users\mauri\Desktop\ConcessionariaBK7\Concessionaria\Concessionaria\obj\Debug\Concessionaria.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\Concessionaria.dll.config
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\Concessionaria.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\Concessionaria.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\csc.exe
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\csc.exe.config
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\csc.rsp
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\csi.exe
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\csi.exe.config
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\csi.rsp
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\System.Buffers.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\System.Memory.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\vbc.exe
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\vbc.exe.config
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\vbc.rsp
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\VBCSCompiler.exe
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\EntityFramework.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\EntityFramework.SqlServer.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\EntityFramework.xml
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\EntityFramework.SqlServer.xml
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.AssemblyReference.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.CoreCompileInputs.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.CopyComplete
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\obj\Debug\Concessionaria.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\Nova pasta (4)\ConcessionariaBK7\Concessionaria\Concessionaria\obj\Debug\Concessionaria.pdb
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\Concessionaria.dll.config
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\Concessionaria.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\Concessionaria.pdb
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\csc.exe
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\csc.exe.config
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\csc.rsp
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\csi.exe
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\csi.exe.config
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\csi.rsp
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.AppContext.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Buffers.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Console.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.IO.Compression.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Memory.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Net.Http.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Net.Sockets.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.ValueTuple.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Xml.XPath.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\vbc.exe
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\vbc.exe.config
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\vbc.rsp
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\VBCSCompiler.exe
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\EntityFramework.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\EntityFramework.SqlServer.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\EntityFramework.xml
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\EntityFramework.SqlServer.xml
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.AssemblyReference.cache
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.CoreCompileInputs.cache
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.CopyComplete
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\obj\Debug\Concessionaria.dll
+C:\Users\david\OneDrive\Área de Trabalho\Concessionaria\Concessionaria\obj\Debug\Concessionaria.pdb
